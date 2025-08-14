@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 
 export default function FormularioLogin({Login}){    
     
@@ -12,8 +12,8 @@ export default function FormularioLogin({Login}){
 
     const handleSubmit = (e) => {
     e.preventDefault();
-    if (isFormValid && Login) {
-      Login({ codigoCliente, usuario, pswd });
+    if (habilitarBoton && Login) {
+      Login({ codigo, usuario, password });
     }
     };
     //Mostrar las casillas de usuario y de password
