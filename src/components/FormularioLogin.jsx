@@ -20,12 +20,12 @@ export default function FormularioLogin({Login}){
     return (
         
 
-        <div>
+        <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Codigo" value ={codigo} onChange={(e) => setCodigo(e.target.value)} />
             <input type="text" placeholder="Usuario" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
             <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
             <button disabled={!habilitarBoton}>Iniciar Sesión</button>
-        </div>
+        </form>
     );
 
 

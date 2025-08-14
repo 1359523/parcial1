@@ -37,8 +37,8 @@ test("Al hacer clic en el botón se llama a Login con los datos correctos", () =
     fireEvent.click(button);
 
     expect(mockLogin).toHaveBeenCalledWith({
-      codigoCliente: "123",
+      codigo: "123",
       usuario: "Juan",
-      pswd: "1234",
+      password: "1234",
     });
 });
